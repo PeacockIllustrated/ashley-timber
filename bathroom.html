@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Bathrooms - 3D Design & Showroom</title>
+    <!-- Main Stylesheet (for header/footer) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page-Specific Stylesheet -->
+    <link rel="stylesheet" href="css/bathrooms.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Re-using the same header for consistency -->
+    <header id="main-header">
+        <div class="container">
+            <nav id="main-nav">
+                <a href="index.html" class="logo">ASHLEY TIMBER</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#featured-categories">Shop</a></li>
+                    <li><a href="bathrooms.html">Bathrooms</a></li>
+                    <li><a href="index.html#footer">About</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </ul>
+                <a href="index.html#featured-categories" class="cta-button">Shop Timber</a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="bathrooms-page">
+        <!-- Bathroom Hero Section -->
+        <section id="bathroom-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="bathroom-title">Your Dream Bathroom, Designed for You.</h1>
+                <p class="bathroom-subtitle">From complimentary 3D design to expert supply, we bring your vision to life.</p>
+                <a href="#booking-form" class="btn btn-secondary">Book Your Free Design Consultation</a>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section id="process" class="section-padding">
+            <div class="container">
+                <h2 class="section-title-dark">A Simple Path to Perfection</h2>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <h3>1. Consultation & Inspiration</h3>
+                        <p>Visit our showroom to explore our collections and discuss your ideas with our expert team.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon"><i class="fas fa-cube"></i></div>
+                        <h3>2. Free 3D Design</h3>
+                        <p>We create a stunning, photorealistic 3D model so you can see your new bathroom before you commit.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon"><i class="fas fa-truck-pickup"></i></div>
+                        <h3>3. Supply & Support</h3>
+                        <p>We supply everything you need, from suites to tiles, coordinating with you or your chosen installer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title-dark">Find Your Style</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item tall">
+                        <img src="assets/bathroom-style-modern.png" alt="Modern Bathroom Design">
+                        <div class="gallery-label">Modern</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/bathroom-style-traditional.png" alt="Traditional Bathroom Design">
+                         <div class="gallery-label">Traditional</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/bathroom-style-minimalist.png" alt="Minimalist Bathroom Design">
+                         <div class="gallery-label">Minimalist</div>
+                    </div>
+                     <div class="gallery-item wide">
+                        <img src="assets/bathroom-style-luxury.png" alt="Luxury Spa Bathroom Design">
+                         <div class="gallery-label">Luxury Spa</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showroom CTA Section -->
+        <section id="showroom-cta" class="section-padding">
+             <div class="container showroom-container">
+                 <div class="showroom-image">
+                     <img src="assets/showroom-interior.png" alt="Inside the Ashley Bathrooms showroom">
+                 </div>
+                 <div class="showroom-content">
+                     <h2 class="section-title-dark left-align">Visit Our Showroom</h2>
+                     <p>Step into a world of inspiration. Our showroom, conveniently located above the timber shop, features full-size displays to help you visualize your space. See and feel the quality of our products and let our friendly team guide you.</p>
+                     <ul>
+                        <li><i class="fas fa-check"></i> Wide range of baths, showers, and vanities</li>
+                        <li><i class="fas fa-check"></i> Expert, no-pressure advice</li>
+                        <li><i class="fas fa-check"></i> Tile and flooring samples available</li>
+                        <li><i class="fas fa-check"></i> Conveniently located with free parking</li>
+                     </ul>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section id="booking-form" class="section-padding bg-dark-accent">
+            <div class="container">
+                <h2 class="section-title-light">Start Your Transformation Today</h2>
+                <p class="form-intro">Fill out the form below to book your free, no-obligation 3D design consultation. Let's create something beautiful together.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number">
+                        <input type="text" name="project_type" placeholder="Project Type (e.g., Main Bathroom, En-suite)">
+                    </div>
+                    <textarea name="message" placeholder="Tell us a little about your project..."></textarea>
+                    <button type="submit" class="btn btn-primary form-btn">Book My Free Consultation</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Re-using the same footer -->
+    <footer id="footer">
+        <!-- The same footer HTML from index.html goes here -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
