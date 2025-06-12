@@ -184,3 +184,31 @@
         padding-bottom: 20px;
     }
 }
+/* --- ACCORDION SUBMENU STYLES (Add to bottom of css/shop.css) --- */
+.sidebar-nav .submenu {
+    list-style: none;
+    padding-left: 15px;
+    display: none; /* Hidden by default */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.sidebar-nav li.active > .submenu {
+    display: block;
+    max-height: 1000px; /* Animate to a large height */
+}
+
+.sidebar-nav .has-submenu > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-nav .has-submenu > a i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar-nav li.active > a i {
+    transform: rotate(180deg);
+}
