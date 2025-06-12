@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Dashboard - Ashley Timber</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shop.css"> <!-- The dashboard-specific CSS -->
+    <link rel="stylesheet" href="css/shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
         <!-- Main Dashboard Layout -->
         <div class="container shop-layout">
             
-            <!-- Column 1: Sticky Sidebar Navigation with Nested Categories -->
+            <!-- Column 1: Sticky Sidebar Navigation with Full Nested Category Structure -->
             <aside class="shop-sidebar">
                 <h3>Product Categories</h3>
                 <ul class="sidebar-nav">
@@ -51,7 +51,7 @@
                     <li><a href="#" class="category-filter" data-category="Birch Plywood">Birch Plywood</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="category-filter" data-category="Building Products">Building Products <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="category-filter" data-category="Building Products" data-toggle="submenu">Building Products <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#" class="category-filter" data-category="BUILDING PRODUCT">Building Product</a></li>
                             <li><a href="#" class="category-filter" data-category="fakro LADDERS">fakro LADDERS</a></li>
@@ -67,7 +67,7 @@
                     <li><a href="#" class="category-filter" data-category="Concrete Screws">Concrete Screws</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="category-filter" data-category="Decking">Decking <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="category-filter" data-category="Decking" data-toggle="submenu">Decking <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#" class="category-filter" data-category="Composite Decking">Composite Decking</a></li>
                             <li><a href="#" class="category-filter" data-category="Decking Product">Decking Product</a></li>
@@ -81,11 +81,11 @@
                     <li><a href="#" class="category-filter" data-category="Door Trims & Thresh">Door Trims & Thresh</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="category-filter" data-category="Doors">Doors <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="category-filter" data-category="Doors" data-toggle="submenu">Doors <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#" class="category-filter" data-category="Door Casings">Door Casings</a></li>
                             <li class="has-submenu">
-                                <a href="#" class="category-filter" data-category="Door Hardware">Door Hardware <i class="fas fa-chevron-right"></i></a>
+                                <a href="#" class="category-filter" data-category="Door Hardware" data-toggle="submenu">Door Hardware <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
                                     <li><a href="#" class="category-filter" data-category="Door Accessoires">Door Accessoires</a></li>
                                     <li><a href="#" class="category-filter" data-category="Door Handles">Door Handles</a></li>
@@ -100,7 +100,7 @@
                     </li>
 
                     <li class="has-submenu">
-                        <a href="#" class="category-filter" data-category="Fencing">Fencing <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="category-filter" data-category="Fencing" data-toggle="submenu">Fencing <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#" class="category-filter" data-category="Fencing Panels">Fencing Panels</a></li>
                             <li><a href="#" class="category-filter" data-category="Fencing Products">Fencing Products</a></li>
@@ -113,25 +113,106 @@
                     <li><a href="#" class="category-filter" data-category="Firewood">Firewood</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="category-filter" data-category="General Hardware">General Hardware <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="category-filter" data-category="General Hardware" data-toggle="submenu">General Hardware <i class="fas fa-chevron-down"></i></a>
                          <ul class="submenu">
                             <li><a href="#" class="category-filter" data-category="25kg Box Nails">25kg Box Nails</a></li>
                             <li><a href="#" class="category-filter" data-category="Bolts">Bolts</a></li>
-                            <!-- ... and so on for all general hardware items ... -->
+                            <li><a href="#" class="category-filter" data-category="Collated Nails">Collated Nails</a></li>
+                            <li><a href="#" class="category-filter" data-category="Filler">Filler</a></li>
+                            <li><a href="#" class="category-filter" data-category="Fire Door Access">Fire Door Access</a></li>
+                            <li><a href="#" class="category-filter" data-category="General Fixings">General Fixings</a></li>
+                            <li><a href="#" class="category-filter" data-category="General Hardware">General Hardware</a></li>
+                            <li><a href="#" class="category-filter" data-category="Glues">Glues</a></li>
+                            <li><a href="#" class="category-filter" data-category="Hand Tools">Hand Tools</a></li>
+                            <li><a href="#" class="category-filter" data-category="Locks">Locks</a></li>
+                            <li><a href="#" class="category-filter" data-category="Nails Loose KG">Nails Loose KG</a></li>
+                            <li><a href="#" class="category-filter" data-category="Paints">Paints</a></li>
+                            <li><a href="#" class="category-filter" data-category="Power Tool Access">Power Tool Access</a></li>
+                            <li><a href="#" class="category-filter" data-category="Screws">Screws</a></li>
+                            <li><a href="#" class="category-filter" data-category="Sealant Cartridge">Sealant Cartridge</a></li>
+                            <li><a href="#" class="category-filter" data-category="Varnishes / Wood Trt">Varnishes / Wood Trt</a></li>
                          </ul>
                     </li>
+
+                    <li><a href="#" class="category-filter" data-category="Hand Tools">Hand Tools</a></li>
+                    <li><a href="#" class="category-filter" data-category="Hardwood Plywood">Hardwood Plywood</a></li>
+                    <li><a href="#" class="category-filter" data-category="Large Plywood">Large Plywood</a></li>
+                    <li><a href="#" class="category-filter" data-category="Marine Plywood">Marine Plywood</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Mouldings" data-toggle="submenu">Mouldings <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="MDF Scotia 2.4">MDF Scotia 2.4</a></li>
+                            <li><a href="#" class="category-filter" data-category="Mouldings 2.4M">Mouldings 2.4M</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="category-filter" data-category="Oak Doors">Oak Doors</a></li>
+                    <li><a href="#" class="category-filter" data-category="Oak PSE">Oak PSE</a></li>
+                    <li><a href="#" class="category-filter" data-category="Performance Screws">Performance Screws</a></li>
+                    <li><a href="#" class="category-filter" data-category="Rustins Product">Rustins Product</a></li>
+                    <li><a href="#" class="category-filter" data-category="Screw Packets">Screw Packets</a></li>
+                    <li><a href="#" class="category-filter" data-category="sheet cutting">sheet cutting</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Sheet Materials" data-toggle="submenu">Sheet Materials <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="Chipboard/Hardbrd">Chipboard/Hardbrd</a></li>
+                            <li><a href="#" class="category-filter" data-category="Fixboard Lam Pine">Fixboard Lam Pine</a></li>
+                            <li><a href="#" class="category-filter" data-category="MDF Plain">MDF Plain</a></li>
+                            <li><a href="#" class="category-filter" data-category="MDF Screen Panels">MDF Screen Panels</a></li>
+                            <li><a href="#" class="category-filter" data-category="MFC White">MFC White</a></li>
+                            <li><a href="#" class="category-filter" data-category="MR MDF">MR MDF</a></li>
+                            <li><a href="#" class="category-filter" data-category="OSB Boards">OSB Boards</a></li>
+                            <li class="has-submenu">
+                                <a href="#" class="category-filter" data-category="Plywoods" data-toggle="submenu">Plywoods <i class="fas fa-chevron-right"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="category-filter" data-category="Birch Plywood">Birch Plywood</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Hardwood Plywood">Hardwood Plywood</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Large Plywood">Large Plywood</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Marine Plywood">Marine Plywood</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Softwood Plywood">Softwood Plywood</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="category-filter" data-category="Special MDF">Special MDF</a></li>
+                            <li><a href="#" class="category-filter" data-category="Veneered MDF">Veneered MDF</a></li>
+                        </ul>
+                    </li>
                     
-                     <!-- ... Other top-level categories ... -->
+                    <li><a href="#" class="category-filter" data-category="Softwood Plywood">Softwood Plywood</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Timber Materials" data-toggle="submenu">Timber Materials <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="Cladding & Flooring">Cladding & Flooring</a></li>
+                            <li class="has-submenu">
+                                <a href="#" class="category-filter" data-category="Dressed PSEs" data-toggle="submenu">Dressed PSEs <i class="fas fa-chevron-right"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="category-filter" data-category="Oak PSE">Oak PSE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="category-filter" data-category="Regularised Joists">Regularised Joists</a></li>
+                            <li><a href="#" class="category-filter" data-category="Skirting & Archit">Skirting & Archit</a></li>
+                            <li><a href="#" class="category-filter" data-category="Stairparts">Stairparts</a></li>
+                            <li><a href="#" class="category-filter" data-category="Treated Laths Each">Treated Laths Each</a></li>
+                            <li><a href="#" class="category-filter" data-category="White MDF Skirting">White MDF Skirting</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="category-filter" data-category="Trellis">Trellis</a></li>
+                    <li><a href="#" class="category--filter" data-category="Twinthread Screws">Twinthread Screws</a></li>
+                    <li><a href="#" class="category-filter" data-category="Varnishes / Wood Trt">Varnishes / Wood Trt</a></li>
+                    <li><a href="#" class="category-filter" data-category="Worktops">Worktops</a></li>
                 </ul>
             </aside>
 
             <!-- Column 2: Dynamic Product Grid and Pagination -->
             <div class="product-content-area">
                 <div id="product-grid" class="product-grid-container">
-                    <!-- Product cards will be inserted here by JavaScript -->
+                    <!-- Products will be dynamically inserted here by shop.js -->
                 </div>
                 <div id="pagination-controls" class="pagination-container">
-                    <!-- Pagination buttons will be inserted here by JavaScript -->
+                    <!-- Pagination buttons will be dynamically inserted here by shop.js -->
                 </div>
             </div>
 
@@ -142,8 +223,11 @@
         <!-- Footer content remains the same... -->
     </footer>
 
-    <!-- IMPORTANT: Link to the new Firebase-powered JavaScript files -->
+    <!-- This is a TEMPORARY script for uploading data. Remove after use. -->
+    <script type="module" src="js/import.js"></script>
+
+    <!-- Main scripts for the shop functionality -->
     <script type="module" src="js/shop.js"></script>
-    <script src="js/script.js"></script> <!-- Keep main script for header/footer menu -->
+    <script src="js/script.js"></script> <!-- General site script (e.g., for header) -->
 </body>
 </html>
