@@ -1,0 +1,136 @@
+/* --- PRODUCTS PAGE SPECIFIC STYLES --- */
+
+/* --- Products Hero --- */
+#products-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/products-hero-background.png') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+}
+
+#products-hero h1 {
+    font-size: 3.5rem;
+    font-family: var(--font-heading);
+}
+
+/* --- Product Categories Grid --- */
+#product-grid .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.p-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.p-category-card {
+    position: relative;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color: var(--white-color);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.p-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.p-category-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+.p-category-card:hover img {
+    transform: scale(1.1);
+}
+
+.p-card-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 20%, transparent);
+}
+.p-card-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+
+/* --- Services Highlight Section --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+
+/* --- Trade CTA Section --- */
+#trade-cta {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.trade-container {
+    text-align: center;
+}
+
+.trade-container h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+}
+
+.trade-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trade-container .btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+}
+
+.trade-container .btn-primary:hover {
+    background-color: #d48f21;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    #products-hero h1 {
+        font-size: 2.8rem;
+    }
+}
