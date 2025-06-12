@@ -1,0 +1,115 @@
+/* --- ABOUT PAGE SPECIFIC STYLES --- */
+
+/* --- About Hero Section --- */
+#about-hero {
+    background-color: var(--dark-color);
+    padding: 60px 0;
+    text-align: center;
+    color: var(--white-color);
+}
+
+#about-hero h1 {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+}
+
+#about-hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* --- Our Story Section --- */
+.story-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.story-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.story-content {
+    flex: 1.2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+}
+.section-title.left-align {
+    text-align: left;
+}
+
+.story-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* --- Sustainability Section --- */
+#sustainability {
+    background-color: var(--light-color);
+}
+
+.fsc-logo {
+    max-width: 120px;
+    margin: 0 auto 20px auto;
+}
+
+.sustainability-text {
+    max-width: 800px;
+    margin: -20px auto 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- Our Team Section --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.team-member-card {
+    text-align: center;
+}
+
+.team-member-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.team-member-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.team-member-card p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    #about-hero h1 {
+        font-size: 2.5rem;
+    }
+    .story-container {
+        flex-direction: column;
+    }
+}
