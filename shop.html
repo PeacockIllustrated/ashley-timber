@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Dashboard - Ashley Timber</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shop.css"> <!-- This will be the new CSS file -->
+    <link rel="stylesheet" href="css/shop.css"> <!-- The dashboard-specific CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -13,8 +13,24 @@
 </head>
 <body>
 
+    <!-- Re-using the same header for consistency -->
     <header id="main-header">
-        <!-- Main Header code remains the same... -->
+         <div class="container">
+            <nav id="main-nav">
+                <a href="index.html" class="logo">ASHLEY TIMBER</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="bathrooms.html">Bathrooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="products.html" class="cta-button">Shop Now</a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main id="shop-page">
@@ -23,24 +39,89 @@
             <p class="breadcrumbs">Home / Shop</p>
         </div>
         
+        <!-- Main Dashboard Layout -->
         <div class="container shop-layout">
             
-            <!-- Column 1: Sticky Sidebar Navigation -->
+            <!-- Column 1: Sticky Sidebar Navigation with Nested Categories -->
             <aside class="shop-sidebar">
                 <h3>Product Categories</h3>
                 <ul class="sidebar-nav">
                     <li><a href="#" class="category-filter active" data-category="all">All Products</a></li>
-                    <li><a href="#" class="category-filter" data-category="acoustic-panels">Acoustic Wall Panels</a></li>
-                    <li><a href="#" class="category-filter" data-category="rustins">Rustins Products</a></li>
-                    <li><a href="#" class="category-filter" data-category="firewood">Firewood</a></li>
-                    <li><a href="#" class="category-filter" data-category="building">Building Products</a></li>
-                    <li><a href="#" class="category-filter" data-category="decking">Decking</a></li>
-                    <li><a href="#" class="category-filter" data-category="doors">Doors</a></li>
-                    <li><a href="#" class="category-filter" data-category="fencing">Fencing</a></li>
-                    <li><a href="#" class="category-filter" data-category="hardware">General Hardware</a></li>
-                    <li><a href="#" class="category-filter" data-category="mouldings">Mouldings</a></li>
-                    <li><a href="#" class="category-filter" data-category="sheet-materials">Sheet Materials</a></li>
-                    <li><a href="#" class="category-filter" data-category="timber">Timber Materials</a></li>
+                    <li><a href="#" class="category-filter" data-category="Acoustic Wall Panels">Acoustic Wall Panels</a></li>
+                    <li><a href="#" class="category-filter" data-category="Birch Plywood">Birch Plywood</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Building Products">Building Products <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="BUILDING PRODUCT">Building Product</a></li>
+                            <li><a href="#" class="category-filter" data-category="fakro LADDERS">fakro LADDERS</a></li>
+                            <li><a href="#" class="category-filter" data-category="Felt & Roofing">Felt & Roofing</a></li>
+                            <li><a href="#" class="category-filter" data-category="Insulation">Insulation</a></li>
+                            <li><a href="#" class="category-filter" data-category="Plaster & P/Boards">Plaster & P/Boards</a></li>
+                            <li><a href="#" class="category-filter" data-category="Sand/Cement/Gravel">Sand/Cement/Gravel</a></li>
+                            <li><a href="#" class="category-filter" data-category="Worktops">Worktops</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="category-filter" data-category="Collated Nails">Collated Nails</a></li>
+                    <li><a href="#" class="category-filter" data-category="Concrete Screws">Concrete Screws</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Decking">Decking <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="Composite Decking">Composite Decking</a></li>
+                            <li><a href="#" class="category-filter" data-category="Decking Product">Decking Product</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="category-filter" data-category="Door Accessoires">Door Accessoires</a></li>
+                    <li><a href="#" class="category-filter" data-category="Door Handles">Door Handles</a></li>
+                    <li><a href="#" class="category-filter" data-category="Door Hinges">Door Hinges</a></li>
+                    <li><a href="#" class="category-filter" data-category="Door Latches & Locks">Door Latches & Locks</a></li>
+                    <li><a href="#" class="category-filter" data-category="Door Trims & Thresh">Door Trims & Thresh</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Doors">Doors <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="Door Casings">Door Casings</a></li>
+                            <li class="has-submenu">
+                                <a href="#" class="category-filter" data-category="Door Hardware">Door Hardware <i class="fas fa-chevron-right"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="#" class="category-filter" data-category="Door Accessoires">Door Accessoires</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Door Handles">Door Handles</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Door Hinges">Door Hinges</a></li>
+                                    <li><a href="#" class="category-filter" data-category="Door Latches & Locks">Door Latches & Locks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="category-filter" data-category="External Door">External Door</a></li>
+                            <li><a href="#" class="category-filter" data-category="Oak Doors">Oak Doors</a></li>
+                            <li><a href="#" class="category-filter" data-category="Stock Doors">Stock Doors</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="Fencing">Fencing <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="Fencing Panels">Fencing Panels</a></li>
+                            <li><a href="#" class="category-filter" data-category="Fencing Products">Fencing Products</a></li>
+                            <li><a href="#" class="category-filter" data-category="Gate Hardware">Gate Hardware</a></li>
+                            <li><a href="#" class="category-filter" data-category="Metposts">Metposts</a></li>
+                            <li><a href="#" class="category-filter" data-category="Trellis">Trellis</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="category-filter" data-category="Firewood">Firewood</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#" class="category-filter" data-category="General Hardware">General Hardware <i class="fas fa-chevron-down"></i></a>
+                         <ul class="submenu">
+                            <li><a href="#" class="category-filter" data-category="25kg Box Nails">25kg Box Nails</a></li>
+                            <li><a href="#" class="category-filter" data-category="Bolts">Bolts</a></li>
+                            <!-- ... and so on for all general hardware items ... -->
+                         </ul>
+                    </li>
+                    
+                     <!-- ... Other top-level categories ... -->
                 </ul>
             </aside>
 
@@ -61,8 +142,8 @@
         <!-- Footer content remains the same... -->
     </footer>
 
-    <!-- IMPORTANT: Link to the new JavaScript file -->
-    <script src="js/shop.js"></script>
-    <script src="js/script.js"></script> <!-- Keep main script for hamburger menu etc. -->
+    <!-- IMPORTANT: Link to the new Firebase-powered JavaScript files -->
+    <script type="module" src="js/shop.js"></script>
+    <script src="js/script.js"></script> <!-- Keep main script for header/footer menu -->
 </body>
 </html>
