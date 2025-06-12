@@ -1,4 +1,4 @@
-// js/import.js
+// js/import.js (FINAL, CLEANED VERSION)
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
@@ -18,7 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Transcribed product data from your video with the new nested structure
+// SANITIZED product data with special characters removed
 const productsData = [
   // Standalone Categories
   { name: 'Acoustic Wall Panels Product', price: 76.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Acoustic Wall Panels'] },
@@ -28,10 +28,10 @@ const productsData = [
   
   // Building Products
   { name: 'fakro Ladders Model X', price: 120.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'fakro LADDERS'] },
-  { name: 'Roofing Felt 10m Roll', price: 45.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Felt & Roofing'] },
+  { name: 'Roofing Felt 10m Roll', price: 45.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Felt and Roofing'] }, // Changed
   { name: 'Insulation Board 50mm', price: 35.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Insulation'] },
-  { name: 'Taper Edge Plasterboard', price: 14.50, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Plaster & P/Boards'] },
-  { name: 'Sharp Sand Bulk Bag', price: 65.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Sand/Cement/Gravel'] },
+  { name: 'Taper Edge Plasterboard', price: 14.50, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Plaster and P-Boards'] }, // Changed
+  { name: 'Sharp Sand Bulk Bag', price: 65.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Sand Cement Gravel'] }, // Changed
   { name: 'Laminate Worktop 3m', price: 95.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Building Products', 'Worktops'] },
 
   // Decking
@@ -41,15 +41,13 @@ const productsData = [
   // Doors & Accessories
   { name: 'Chrome Door Handle Pair', price: 22.50, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Door Hardware', 'Door Handles'] },
   { name: '3" Steel Door Hinge', price: 5.50, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Door Hardware', 'Door Hinges'] },
-  { name: 'Mortice Lock 5-Lever', price: 18.99, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Door Hardware', 'Door Latches & Locks'] },
+  { name: 'Mortice Lock 5-Lever', price: 18.99, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Door Hardware', 'Door Latches and Locks'] }, // Changed
   { name: 'Oak Door Casing Set', price: 42.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Door Casings'] },
   { name: 'Solid Oak Internal Door', price: 210.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Doors', 'Oak Doors'] },
 
   // Fencing
   { name: '6ft Fence Panel', price: 55.00, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Fencing', 'Fencing Panels'] },
   { name: 'Heavy Duty Metpost', price: 12.75, imageSrc: 'assets/product-placeholder.png', categoryPath: ['Fencing', 'Metposts'] },
-  
-  // And so on for all ~1400 products...
 ];
 
 // The function to run from the console
