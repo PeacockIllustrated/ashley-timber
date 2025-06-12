@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop All Products - Ashley Timber</title>
+    <title>Shop - Ashley Timber</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/shop.css"> <!-- This will be the new CSS file below -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -33,29 +33,35 @@
         </div>
     </header>
 
-    <!-- Sticky Category Navigation Dashboard -->
-    <nav id="shop-nav">
-        <div class="container">
-            <ul class="category-links">
-                <li><a href="#acoustic-panels">Acoustic Panels</a></li>
-                <li><a href="#rustins-products">Rustins</a></li>
-                <li><a href="#firewood">Firewood</a></li>
-                <li><a href="#building-products">Building</a></li>
-                <li><a href="#decking">Decking</a></li>
-                <li><a href="#doors">Doors</a></li>
-                <li><a href="#fencing">Fencing</a></li>
-                <li><a href="#hardware">Hardware</a></li>
-                <li><a href="#mouldings">Mouldings</a></li>
-                <li><a href="#sheet-materials">Sheet Materials</a></li>
-                <li><a href="#timber">Timber</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-
     <main id="shop-page">
-        <div class="container">
-            <div id="product-listings">
+        <div class="container shop-header">
+            <h1>Shop</h1>
+            <p class="breadcrumbs">Home / Shop</p>
+        </div>
+        
+        <!-- Main Dashboard Layout -->
+        <div class="container shop-layout">
+            
+            <!-- Column 1: Sidebar Navigation -->
+            <aside class="shop-sidebar">
+                <h3>Product Categories</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#acoustic-panels">Acoustic Wall Panels</a></li>
+                    <li><a href="#rustins-products">Rustins Products</a></li>
+                    <li><a href="#firewood">Firewood</a></li>
+                    <li><a href="#building-products">Building Products</a></li>
+                    <li><a href="#decking">Decking</a></li>
+                    <li><a href="#doors">Doors</a></li>
+                    <li><a href="#fencing">Fencing</a></li>
+                    <li><a href="#hardware">General Hardware</a></li>
+                    <li><a href="#mouldings">Mouldings</a></li>
+                    <li><a href="#sheet-materials">Sheet Materials</a></li>
+                    <li><a href="#timber">Timber Materials</a></li>
+                </ul>
+            </aside>
+
+            <!-- Column 2: Product Listings -->
+            <div class="product-listings">
                 
                 <section id="acoustic-panels">
                     <h2>Acoustic Wall Panels</h2>
@@ -156,6 +162,7 @@
                 </section>
 
             </div>
+
         </div>
     </main>
 
