@@ -1,0 +1,122 @@
+/* --- SHOP PAGE SPECIFIC STYLES --- */
+
+/* --- Sticky Category Navigation --- */
+#shop-nav {
+    position: sticky;
+    top: 80px; /* Height of main header */
+    background: var(--light-color);
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #ddd;
+    overflow-x: auto; /* For mobile */
+    white-space: nowrap; /* For mobile */
+}
+
+#shop-nav .container {
+    padding: 0;
+}
+
+.category-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-links a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.category-links a:hover {
+    color: var(--primary-color);
+    background-color: #e9e9e9;
+}
+
+/* For Mobile: make the nav bar scrollable horizontally */
+@media (max-width: 992px) {
+    .category-links {
+        justify-content: flex-start;
+        padding: 0 15px;
+    }
+}
+
+
+/* --- Product Listings --- */
+#shop-page {
+    padding: 40px 0;
+}
+
+#product-listings section {
+    padding-top: 40px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* This is a modern way to offset the scroll jump to account for the sticky header */
+#product-listings section:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+
+#product-listings section h2 {
+    font-size: 2.2rem;
+    font-family: var(--font-heading);
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #e9e9e9;
+    flex-wrap: wrap; /* For smaller screens */
+    gap: 15px;
+}
+
+.product-item span {
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+
+.price-cta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    min-width: 80px; /* Align prices */
+    text-align: right;
+}
+
+.add-to-basket {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.add-to-basket:hover {
+    background: #d48f21;
+}
